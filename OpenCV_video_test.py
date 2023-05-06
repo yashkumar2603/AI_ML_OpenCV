@@ -5,7 +5,7 @@ import cv2
 vid = cv2.VideoCapture(0)
 while(True):
     ret, frame = vid.read()
-    scale_percent = 50# percent of original size
+    scale_percent = 150# percent of original size
     width = int(frame.shape[1] * scale_percent / 100)
     height = int(frame.shape[0] * scale_percent / 100)
     dim = (width, height)
